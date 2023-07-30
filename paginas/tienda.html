@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShingCC - Tienda de Ropa</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="icon" href="../assets/media/icono.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .producto-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .producto {
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .producto img {
+      max-width: 70%;
+    }
+
+    .producto h2 {
+      margin-top: 10px;
+    }
+
+    .producto p.price {
+      font-weight: bold;
+      color: #666;
+    }
+
+    .producto button {
+      margin-top: 10px;
+      background-color: #464646;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .producto button:hover {
+      background-color: #464646;
+    }
+  </style>
+</head>
+<section class="ropas123">
+<body>
+    <header>
+        <div class="container">
+          <p class="logo"><a href="../index.html">ShingCC</a></p>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../paginas/quienes-somos.html">Quienes Somos</a>
+                <a href="../paginas/fotos.html">Fotos</a>
+                <a href="../paginas/tienda.html">Tienda</a>
+                <a href="../paginas/contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+  
+  <div class="producto-container">
+    <div class="producto">
+      <img src="../assets/media/asd.jpg" alt="Ropa 1">
+      <h2>Buzos</h2>
+      <p class="price">$17.456</p>
+      <button>Agregar al carrito</button>
+    </div>
+  
+    <div class="producto">
+      <img src="../assets/media/asd2.jpg" alt="Ropa 2">
+      <h2>Jeans</h2>
+      <p class="price">$14.537</p>
+      <button>Agregar al carrito</button>
+    </div>
+  
+    <div class="producto">
+      <img src="../assets/media/asd3.jpg" alt="Ropa 3">
+      <h2>Remeras</h2>
+      <p class="price">$7.657</p>
+      <button>Agregar al carrito</button>
+    </div>
+  </div>
+</section>
+</body>
+</html>
