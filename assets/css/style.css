@@ -106,7 +106,7 @@ header a:hover{
     text-align: center;
 }
 
-#fotoscatalogo .container{
+#fotoscatalogo .container9{
    padding: 200px 12px;
 }
 
@@ -363,6 +363,7 @@ footer .container{
     background-color: #555555;
   }
   
-
-  
-  
+.mapa{
+    margin-top: 25px;
+    margin-bottom:100px;
+}
