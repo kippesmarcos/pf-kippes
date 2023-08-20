@@ -1,39 +1,22 @@
-* {
+*{
   box-sizing: border-box;
 }
 
-html {
+html{
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto',sans-serif;
   margin: 0;
 }
 
-h1 {
-  font-size: 3.5em;
-}
-
-h2 {
-  font-size: 2.7em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.25em;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  font-size: 1.25em;
-}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
 
 .mi-boton {
   display: inline-block;
@@ -47,20 +30,18 @@ li {
   cursor: pointer;
 }
 
-.container {
+.container{
   max-width: 1400px;
   margin: auto;
 }
 
-.color-acento {
-  color: grey;
+.color-acento { color: grey; }
+
+header{
+  background-color: rgb(245,245,245);
 }
 
-header {
-  background-color: rgb(245, 245, 245);
-}
-
-header .logo {
+header .logo{
   margin: 0;
   padding: 25px 30px;
   font-weight: bold;
@@ -68,31 +49,31 @@ header .logo {
   font-size: 1.6em;
 }
 
-header .container {
+header .container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header nav {
+header nav{
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-bottom: 25px;
 }
 
-header a {
+header a{
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
 
-header a:hover {
+header a:hover{
   color: grey;
 }
 
-#inicio {
+#inicio{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,38 +87,38 @@ header a:hover {
   background-position: center center;
 }
 
-#inicio h1 {
+#inicio h1{
   color: grey;
 }
 
-#inicio button {
+#inicio button{
   font-size: 1.75em;
 }
 
-#somos-shing .container {
+#somos-shing .container{
   text-align: center;
   padding: 200px 12px;
 }
 
-#fotoscatalogo {
-  background-color: rgb(30, 30, 30);
+#fotoscatalogo{
+  background-color: rgba(30,30,30);
   color: white;
   text-align: center;
 }
 
-#fotoscatalogo .container9 {
-  padding: 200px 12px;
+#fotoscatalogo .container9{
+ padding: 200px 12px;
 }
 
-#fotoscatalogo h2 {
+#fotoscatalogo h2{
   margin-top: 0;
 }
 
-#fotoscatalogo p {
+#fotoscatalogo p{
   display: none;
 }
 
-#fotoscatalogo .carta {
+#fotoscatalogo .carta{
   background-position: center center;
   background-size: cover;
   padding: 140px;
@@ -145,140 +126,175 @@ header a:hover {
   border-radius: 15px;
 }
 
-.carta:first-child {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/fotos1.jpeg");
+.carta:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("../media/fotos1.jpeg");
 }
 
-.carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/fotos2.jpeg");
+.carta:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("../media/fotos2.jpeg");
 }
 
-.carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/fotos3.jpeg");
+.carta:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("../media/fotos3.jpeg");
 }
 
-footer {
-  background-color: rgb(230, 230, 230);
+footer{
+  background-color: rgba(230,230,230);
 }
 
-footer p {
+footer p{
   margin: 0;
   padding: 12px;
-  color: rgb(100, 100, 100);
+  color: rgba(100,100,100);
 }
 
-footer .container {
+footer .container{
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-@media (min-width: 720px) {
-  header {
-    position: fixed;
-    width: 100%;
+@media (min-width: 720px){
+      header{
+          position: fixed;
+          width: 100%;
+      }
+  header .container{
+      flex-direction: row;
+      justify-content: space-between;
   }
-  header .container {
-    flex-direction: row;
-    justify-content: space-between;
+
+  header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
   }
-  header nav {
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-right: 20px;
+
+  #inicio h1{
+      font-size: 5em;
   }
-  #inicio h1 {
-    font-size: 5em;
+
+  #somos-shing .container{
+      display: flex;  
+      justify-content: space-evenly;
   }
-  #somos-shing .container {
-    display: flex;
-    justify-content: space-evenly;
+
+  #somos-shing .texto{
+      width: 50%;
+      max-width: 600px;
+      text-align: initial;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
-  #somos-shing .texto {
-    width: 50%;
-    max-width: 600px;
-    text-align: initial;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  #somos-shing h2{
+      margin-top: 0px;
   }
-  #somos-shing h2 {
-    margin-top: 0px;
+
+  #somos-shing .img-container{
+      background-image: url("../media/cartelsomos.jpeg");
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
+      width: 400px;
   }
-  #somos-shing .img-container {
-    background-image: url("../media/cartelsomos.jpeg");
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    width: 400px;
+
+  #fotoscatalogo .catalogo{
+      display: flex;
+      justify-content: center;
   }
-  #fotoscatalogo .catalogo {
-    display: flex;
-    justify-content: center;
+
+  #catalogo h2{
+      font-size: 5em;
   }
-  #catalogo h2 {
-    font-size: 5em;
+
+  #catalogo button{
+      font-size: em;
   }
-  #catalogo button {
-    font-size: em;
+
+  footer .container{
+      justify-content: flex end;
   }
-  footer .container {
-    justify-content: flex end;
-  }
+
 }
-.ropas123 body {
+
+
+.ropas123 body{
   font-family: Arial, sans-serif;
   background-color: #f1f1f1;
   margin: 0;
   padding: 20px;
 }
+    
 
 .producto-container {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-}
-.producto-container .producto {
-  background-color: #f9f9f9;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  text-align: center;
-  width: calc(30% - 20px);
-}
-.producto-container .producto img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 4px;
-}
-.producto-container .producto h2 {
-  font-size: 1rem;
-  margin-bottom: 2px;
-}
-.producto-container .producto .price {
-  color: grey;
-  font-weight: bold;
-  font-size: 0.8rem;
-  margin-bottom: 4px;
-}
-.producto-container .producto button {
-  background-color: grey;
-  color: #fff;
-  border: none;
-  padding: 10px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 0.7rem;
-}
-.producto-container .producto button:hover {
-  background-color: grey;
+
+  .producto {
+    background-color: #f9f9f9;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    width: calc(30% - 20px); // Cambiado a 25% para acomodar más productos por fila
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 4px;
+    }
+
+    h2 {
+      font-size: 1.0rem; // Reducido el tamaño de fuente
+      margin-bottom: 2px;
+    }
+
+    .price {
+      color: grey;
+      font-weight: bold;
+      font-size: 0.8rem; // Reducido el tamaño de fuente
+      margin-bottom: 4px;
+    }
+
+    button {
+      background-color: grey;
+      color: #fff;
+      border: none;
+      padding: 10px 8px; // Reducido el padding
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 0.7rem; // Reducido el tamaño de fuente
+
+      &:hover {
+        background-color: grey;
+      }
+    }
+  }
 }
 
-.contacto123 body {
+.contacto123 body{
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   margin: 0;
@@ -343,6 +359,7 @@ h1 {
   margin-bottom: 100px;
 }
 
+
 :root {
   --color: black;
 }
@@ -351,21 +368,21 @@ h1 {
   display: flex;
   height: 100vh;
   gap: 25px;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: center; 
+  text-align: center; 
 }
 
 .texto-arriba {
   z-index: 2;
   color: grey;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .btn-2 {
   border: 3px solid;
-  text-align: center;
+  text-align: center; 
 }
 
 .btn {
@@ -417,5 +434,7 @@ h1 {
   transform: rotate(90deg);
   color: var(--color);
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
